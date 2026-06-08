@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Frituur De Smulplek</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fffaf0;
+  color: #222;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #222;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #d18b00;
+}
+
+/* MENU */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.item {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* INFO BOX */
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media(max-width:600px){
+  .hero h1 { font-size: 32px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>🍟 Frituur De Smulplek</h1>
+  <p>Verse frieten • Snelle service • Beste smaak in de buurt</p>
+  <a class="btn" href="#menu">Bekijk Menu</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#menu">Menu</a>
+  <a href="#uren">Openingsuren</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- MENU -->
+<section id="menu">
+  <h2>📋 Ons Menu</h2>
+  <div class="menu">
+    <div class="item"><span>Friet klein</span><strong>€2.50</strong></div>
+    <div class="item"><span>Friet groot</span><strong>€3.50</strong></div>
+    <div class="item"><span>Bicky Burger</span><strong>€4.00</strong></div>
+    <div class="item"><span>Frikandel</span><strong>€2.00</strong></div>
+    <div class="item"><span>Kroket</span><strong>€2.00</strong></div>
+    <div class="item"><span>Stoofvlees</span><strong>€7.50</strong></div>
+  </div>
+</section>
+
+<!-- OPENINGSUREN -->
+<section id="uren">
+  <h2>🕒 Openingsuren</h2>
+  <div class="box">
+    <p>Ma - Vr: 11:00 - 22:00</p>
+    <p>Za: 12:00 - 23:00</p>
+    <p>Zo: 12:00 - 21:00</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>📍 Contact</h2>
+  <div class="box">
+    <p>📞 0123 45 67 89</p>
+    <p>📍 Frietstraat 10, Brussel</p>
+    <p>✉️ info@smulplek.be</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Frituur De Smulplek — Alle rechten voorbehouden
+</footer>
+
+</body>
+</html>
